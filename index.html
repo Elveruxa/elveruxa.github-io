@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <title>Продажа овощей</title>
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body {
+   font-family: Arial, sans-serif;
+  }
+
+  header {
+   background-color: #6dc56d;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+  }
+
+  nav {
+   background-color: #fff;
+   border: 1px solid #6dc56d;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+  }
+
+  nav a {
+   color: #333;
+   padding: 10px;
+   text-decoration: none;
+  }
+
+  nav a:hover {
+   color: #fff;
+   background-color: #6dc56d;
+  }
+
+  section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 20px;
+  }
+
+  article {
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+   margin: 10px;
+   width: 300px;
+  }
+
+  h2 {
+   background-color: #6dc56d;
+   color: #fff;
+   margin: 0;
+   padding: 10px;
+   text-align: center;
+  }
+
+  img {
+   display: block;
+   margin: 0 auto;
+   max-width: 100%;
+   height: auto;
+  }
+
+  .price {
+   color: #6dc56d;
+   font-size: 24px;
+   font-weight: bold;
+   margin: 10px auto;
+   text-align: center;
+  }
+
+  .description {
+   margin-bottom: 10px;
+   padding: 10px;
+   text-align: justify;
+  }
+
+  form {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+  }
+
+  label {
+   margin-bottom: 5px;
+  }
+
+  input[type="text"], textarea {
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   padding: 5px;
+   margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+   background-color: #6dc56d;
+   border: none;
+   color: #ffffff;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: all .3s ease;
+  }
+
+  input[type="submit"]:hover {
+   background-color: #ffffff;
+   color: #6dc56d;
+   border: 1px solid #6dc56d;
+  }
+ </style>
+</head>
+<body>
+ <header>
+  <h1>Продажа овощей</h1>
+ </header>
+
+ <nav>
+  <a href="#">Главная</a>
+  <a href="#">О нас</a>
+  <a href="#">Контакты</a>
+ </nav>
+
+ <section>
+  <article>
+   <h2>Помидоры</h2>
+   <img src="img/pomidor.jpg" alt="pomidor">
+   <div class="price">150 руб./кг</div>
+   <div class="description">
+    <p>Сочные свежие помидоры выращенные на экологически чистых полях.</p>
+    <p>Вес упаковки: 1 кг.</p>
+   </div>
+   <form action="/">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+    <label for="amount">Количество:</label>
+    <input type="text" id="amount" name="amount" placeholder="Введите количество" required>
+    <input type="submit" value="Заказать">
+   </form>
+  </article>
+
+  <article>
+   <h2>Огурцы</h2>
+   <img src="img/ogurets.jpg" alt="ogurets">
+   <div class="price">120 руб./кг</div>
+   <div class="description">
+    <p>Свежие огурцы соленой и свежей засолки, растущие на полях Краснодарского края.</p>
+    <p>Вес упаковки: 1 кг.</p>
+   </div>
+   <form action="/">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+    <label for="amount">Количество:</label>
+    <input type="text" id="amount" name="amount" placeholder="Введите количество" required>
+    <input type="submit" value="Заказать">
+   </form>
+  </article>
+
+  <article>
+   <h2>Морковь</h2>
+   <img src="img/morkva.jpg" alt="morkva">
+   <div class="price">90 руб./кг</div>
+   <div class="description">
+    <p>Сладкая свежая морковь, порезанная на кусочки.</p>
+    <p>Вес упаковки: 1 кг.</p>
+   </div>
+   <form action="/">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+    <label for="amount">Количество:</label>
+    <input type="text" id="amount" name="amount" placeholder="Введите количество" required>
+    <input type="submit" value="Заказать">
+   </form>
+  </article>
+ </section>
+</body>
+</html>
